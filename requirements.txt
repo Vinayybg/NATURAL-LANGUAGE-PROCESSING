@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════════
+#  NVIDIA Strategic Intelligence Agent — Dependencies
+#  Install: pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════
+
+# ── Dashboard & visualisation ─────────────────────────────
+streamlit>=1.35.0
+plotly>=5.22.0
+pandas>=2.2.0
+
+# ── Data collection ───────────────────────────────────────
+feedparser>=6.0.11          # RSS/Atom feed parsing
+requests>=2.31.0            # HTTP requests
+beautifulsoup4>=4.12.3      # HTML cleaning
+lxml>=5.2.0                 # Fast HTML/XML parser (BS4 backend)
+
+# ── NLP & embeddings ──────────────────────────────────────
+# Pin sentence-transformers and its deps to avoid tokenizers version conflict.
+# Error seen: tokenizers==0.23.1 incompatible with transformers requirement
+# tokenizers>=0.22.0,<=0.23.0 — this pin resolves it.
+sentence-transformers>=3.0.0,<4.0.0
+transformers>=4.41.0,<4.47.0
+tokenizers>=0.19.0,<0.21.0
+vaderSentiment>=3.3.2          # Rule-based sentiment, no GPU needed
+
+# ── Vector store ──────────────────────────────────────────
+chromadb>=0.5.0                # Local persistent vector DB (HNSW)
+
+# ── Hybrid search ─────────────────────────────────────────
+rank_bm25>=0.2.2               # BM25 Okapi for lexical ranking
+
+# ── LLM backends (all open-source / free) ────────────────
+groq>=0.9.0                    # Groq free cloud API (llama-3.1-8b)
+ollama>=0.2.0                  # Ollama local runner (qwen3:8b)
+
+# ── Utilities ─────────────────────────────────────────────
+python-dotenv>=1.0.1           # Load .env into environment
+tqdm>=4.66.4                   # Progress bars in terminal
+loguru>=0.7.2                  # Structured logging
+
+# ── Development / Testing ────────────────────────────────
+pytest>=8.2.0
+ruff>=0.4.0

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run tests
+        run: pytest tests/ -v --tb=short
+
+      - name: Syntax check all Python files
+        run: |
+          python -m py_compile src/nvidia_agent/config.py
+          python -m py_compile src/nvidia_agent/collectors/base.py
+          python -m py_compile src/nvidia_agent/processing/embedder.py
+          python -m py_compile src/nvidia_agent/storage/vector_store.py
+          python -m py_compile src/nvidia_agent/agent/ceo_agent.py
+          python -m py_compile collector.py processor.py pipeline.py app.py
+          echo "All syntax checks passed"
