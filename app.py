@@ -816,135 +816,7 @@ with tab_intel:
           </div>
         </div>""", unsafe_allow_html=True)
     else:
-        # ── AGENT PLAN (Step 1 output) ────────────────────────────────────────
-        agent_plan = report.get("agent_plan", {})
-        agent_val  = report.get("agent_validation", {})
-
-        if agent_plan:
-            st.markdown(
-                '<div class="nx-section-header">'
-                '<div class="nx-section-icon">🎯</div>'
-                '<h3 class="nx-section-title">Agent Plan — What the AI Decided to Investigate</h3>'
-                '</div>',
-                unsafe_allow_html=True
-            )
-            goal      = agent_plan.get("goal", "")
-            reasoning = agent_plan.get("reasoning", "")
-            key_qs    = agent_plan.get("key_questions", [])
-            opp_qs    = agent_plan.get("opportunity_queries", [])
-            risk_qs   = agent_plan.get("risk_queries", [])
-
-            pc1, pc2, pc3 = st.columns([2, 1, 1])
-
-            with pc1:
-                st.markdown(
-                    '<div style="background:#071020;border:1px solid #192a45;'
-                    'border-left:3px solid #76b900;border-radius:10px;padding:16px 18px;margin-bottom:12px;">'
-                    '<div style="font-size:11px;font-weight:700;color:#76b900;text-transform:uppercase;'
-                    'letter-spacing:1px;margin-bottom:8px;">Agent Goal</div>'
-                    f'<div style="font-size:15px;color:#e2eaf8;line-height:1.6;">{goal}</div>'
-                    f'<div style="font-size:13px;color:#6b7a99;margin-top:10px;line-height:1.5;">{reasoning}</div>'
-                    '</div>',
-                    unsafe_allow_html=True
-                )
-                if key_qs:
-                    qs_items = "".join(
-                        f'<div style="font-size:13px;color:#8a9ab8;padding:5px 0;'
-                        f'border-bottom:1px solid #0e1c34;">→ {q}</div>'
-                        for q in key_qs
-                    )
-                    st.markdown(
-                        '<div style="background:#071020;border:1px solid #192a45;border-radius:10px;padding:14px 16px;">'
-                        '<div style="font-size:11px;font-weight:700;color:#445066;text-transform:uppercase;margin-bottom:8px;">Key Questions</div>'
-                        f'{qs_items}</div>',
-                        unsafe_allow_html=True
-                    )
-
-            with pc2:
-                if opp_qs:
-                    items = "".join(
-                        f'<div style="font-size:12px;color:#76b900;padding:4px 0;line-height:1.4;">✓ {q[:60]}</div>'
-                        for q in opp_qs
-                    )
-                    st.markdown(
-                        '<div style="background:#071020;border:1px solid #192a45;border-radius:10px;padding:14px 16px;">'
-                        '<div style="font-size:11px;font-weight:700;color:#445066;text-transform:uppercase;margin-bottom:8px;">Opportunity Queries</div>'
-                        f'{items}</div>',
-                        unsafe_allow_html=True
-                    )
-
-            with pc3:
-                if risk_qs:
-                    items = "".join(
-                        f'<div style="font-size:12px;color:#ef4444;padding:4px 0;line-height:1.4;">✓ {q[:60]}</div>'
-                        for q in risk_qs
-                    )
-                    st.markdown(
-                        '<div style="background:#071020;border:1px solid #192a45;border-radius:10px;padding:14px 16px;">'
-                        '<div style="font-size:11px;font-weight:700;color:#445066;text-transform:uppercase;margin-bottom:8px;">Risk Queries</div>'
-                        f'{items}</div>',
-                        unsafe_allow_html=True
-                    )
-
-            st.markdown("---")
-
-        # ── AGENT VALIDATION (Step 5 output) ─────────────────────────────────
-        if agent_val:
-            conf     = agent_val.get("overall_confidence", 0)
-            conf_pct = int(conf * 100)
-            conf_col = "#76b900" if conf_pct >= 75 else "#f59e0b" if conf_pct >= 50 else "#ef4444"
-            val_notes        = agent_val.get("validation_notes", "")
-            unaddressed_risks = agent_val.get("unaddressed_risks", [])
-            unaddressed_opps  = agent_val.get("unaddressed_opportunities", [])
-            contradictions    = agent_val.get("contradictions", [])
-
-            st.markdown(
-                '<div class="nx-section-header">'
-                '<div class="nx-section-icon">✅</div>'
-                '<h3 class="nx-section-title">Agent Validation — Self-Assessment Before Presenting</h3>'
-                '</div>',
-                unsafe_allow_html=True
-            )
-
-            v1, v2, v3, v4 = st.columns(4)
-            v1.metric("Analysis Confidence",       f"{conf_pct}%")
-            v2.metric("Unaddressed Risks",          str(len(unaddressed_risks)))
-            v3.metric("Unaddressed Opportunities",  str(len(unaddressed_opps)))
-            v4.metric("Contradictions Found",       str(len(contradictions)))
-
-            if val_notes:
-                st.markdown(
-                    f'<div style="background:#071020;border:1px solid #192a45;'
-                    f'border-left:3px solid {conf_col};border-radius:10px;'
-                    f'padding:14px 18px;margin:12px 0;font-size:14px;color:#8a9ab8;line-height:1.6;">'
-                    f'{val_notes}</div>',
-                    unsafe_allow_html=True
-                )
-
-            rec_scores = agent_val.get("recommendation_scores", [])
-            if rec_scores:
-                rows_html = ""
-                for rs in rec_scores:
-                    sc     = rs.get("score", 0)
-                    sc_col = "#76b900" if sc >= 0.75 else "#f59e0b" if sc >= 0.5 else "#ef4444"
-                    reason = rs.get("reason", "")
-                    text   = rs.get("text", "")
-                    rows_html += (
-                        f'<div style="display:flex;justify-content:space-between;align-items:center;'
-                        f'padding:8px 0;border-bottom:1px solid #0e1c34;">'
-                        f'<div style="flex:1;font-size:13px;color:#b8c4d8;">{text}</div>'
-                        f'<div style="font-size:12px;color:#6b7a99;flex:1;padding:0 12px;">{reason}</div>'
-                        f'<div style="font-size:14px;font-weight:700;color:{sc_col};white-space:nowrap;">{int(sc*100)}%</div>'
-                        f'</div>'
-                    )
-                st.markdown(
-                    '<div style="background:#071020;border:1px solid #192a45;border-radius:10px;padding:14px 18px;margin:12px 0;">'
-                    '<div style="font-size:11px;font-weight:700;color:#445066;text-transform:uppercase;margin-bottom:10px;">Recommendation Confidence Scores</div>'
-                    f'{rows_html}</div>',
-                    unsafe_allow_html=True
-                )
-
-            st.markdown("---")
+        # Sections 3→4→5→6→7 in correct order
 
         # ── Sections 3 + 4: Opportunities + Risks ────────────────────────────
         col_opp, col_risk = st.columns(2)
@@ -1253,10 +1125,35 @@ with tab_intel:
                 hor_badge_html = _hor_badge(hor)
                 pri_badge_html = _sev_badge(pri)
 
+                # Validation badge
+                validation     = rec.get("validation", {})
+                verdict        = validation.get("verdict", "approved")
+                reason         = validation.get("reason", "")
+                grounding      = rec.get("grounding_confidence", None)
+                v_color        = "#76b900" if verdict == "approved" else "#f59e0b" if verdict == "needs_revision" else "#ef4444"
+                v_icon         = "✅" if verdict == "approved" else "⚠️" if verdict == "needs_revision" else "❌"
+                v_label        = verdict.replace("_", " ").upper()
+                grounding_html = (
+                    f'<span style="margin-left:10px;font-size:11px;color:#445066;">'
+                    f'SBERT grounding: <span style="color:{v_color};">{grounding:.2f}</span></span>'
+                    if grounding is not None else ""
+                )
+                validation_html = (
+                    f'<div style="margin:10px 0 12px 0;padding:8px 12px;background:#071020;'
+                    f'border:1px solid {v_color}33;border-left:3px solid {v_color};border-radius:6px;'
+                    f'display:flex;align-items:center;gap:8px;flex-wrap:wrap;">'
+                    f'<span style="font-size:11px;font-weight:700;letter-spacing:0.8px;'
+                    f'text-transform:uppercase;color:{v_color};">{v_icon} Validated — {v_label}</span>'
+                    + grounding_html +
+                    (f'<div style="width:100%;font-size:12px;color:#445066;margin-top:4px;">{reason}</div>' if reason else "") +
+                    f'</div>'
+                )
+
                 rec_html = (
                     '<div class="nx-rec">'
                     '<div class="nx-rec-num">Action #' + str(i) + ' &nbsp;&middot;&nbsp; ' + hor_badge_html + '</div>'
                     '<div class="nx-rec-text">' + rec_text_val + '</div>'
+                    + validation_html +
 
                     '<div style="margin:12px 0 6px 0;font-size:10px;font-weight:700;'
                     'letter-spacing:1.2px;text-transform:uppercase;color:#76b900;">'

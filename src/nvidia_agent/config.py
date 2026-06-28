@@ -24,21 +24,19 @@ COMPANY_HQ     = "Santa Clara, California, USA"
 LLM_BACKEND = os.getenv("LLM_BACKEND", "groq")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL   = os.getenv("GROQ_MODEL",   "llama-3.1-8b-instant")
+GROQ_MODEL   = os.getenv("GROQ_MODEL",   "llama-3.3-70b-versatile")  # upgraded from 8b
 
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL",    "qwen3:8b")
+OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL",    "qwen3:14b")
+# Set OLLAMA_THINK=false to disable qwen3 chain-of-thought output
+# (qwen3 emits long "Thinking..." blocks before JSON which breaks parsing)
+OLLAMA_THINK    = os.getenv("OLLAMA_THINK", "false").lower() == "true"
 
 HF_API_KEY = os.getenv("HF_API_KEY", "")
 HF_MODEL   = os.getenv("HF_MODEL",   "mistralai/Mistral-7B-Instruct-v0.3")
 
 
 # ── NewsAPI ───────────────────────────────────────────────────────────────────
-# Provides breaking news from 150,000+ sources worldwide.
-# Free tier: 100 requests/day, articles up to 1 month old.
-# Get your free key at: https://newsapi.org/register
-# Then add to your .env file:  NEWS_API_KEY=your_key_here
-# If not set, NewsAPI collection is silently skipped — everything else still runs.
 NEWS_API_KEY = os.getenv("NEWS_API_KEY", "")
 
 
@@ -103,11 +101,11 @@ RSS_FEEDS = [
      "type": "company"},
 
     # ── Community / Discussion ────────────────────────────────────────────────
-    {"name": "Hacker News",             "url": "https://hnrss.org/frontpage",                        "type": "community"},
-    {"name": "Reddit r/nvidia",         "url": "https://www.reddit.com/r/nvidia/.rss?limit=25",      "type": "community"},
+    {"name": "Hacker News",             "url": "https://hnrss.org/frontpage",                            "type": "community"},
+    {"name": "Reddit r/nvidia",         "url": "https://www.reddit.com/r/nvidia/.rss?limit=25",          "type": "community"},
     {"name": "Reddit r/MachineLearning","url": "https://www.reddit.com/r/MachineLearning/.rss?limit=25", "type": "community"},
-    {"name": "Reddit r/hardware",       "url": "https://www.reddit.com/r/hardware/.rss?limit=25",    "type": "community"},
-    {"name": "Reddit r/artificial",     "url": "https://www.reddit.com/r/artificial/.rss?limit=25",  "type": "community"},
+    {"name": "Reddit r/hardware",       "url": "https://www.reddit.com/r/hardware/.rss?limit=25",        "type": "community"},
+    {"name": "Reddit r/artificial",     "url": "https://www.reddit.com/r/artificial/.rss?limit=25",      "type": "community"},
 ]
 
 
@@ -146,9 +144,6 @@ WIKIPEDIA_TOPICS = [
 
 
 # ── Collection tuning ─────────────────────────────────────────────────────────
-# 15 articles per source keeps collection fast (~5 minutes for a full run).
-# You have 30 feeds × 15 = 450 max RSS articles — more than enough with Wikipedia.
-# Increase to 25-40 only if you want a longer, slower collection run.
 MAX_ARTICLES_PER_SOURCE = 15
 MIN_TEXT_LENGTH         = 80
 
@@ -159,12 +154,24 @@ CHUNK_OVERLAP = 60    # overlapping words between consecutive chunks
 
 
 # ── Retrieval tuning ──────────────────────────────────────────────────────────
-TOP_K_RETRIEVAL = 12   # chunks retrieved per RAG query (higher = more context)
+TOP_K_RETRIEVAL = 12   # chunks retrieved per RAG query
 
 
 # ── LLM generation ────────────────────────────────────────────────────────────
-LLM_MAX_TOKENS  = 2048   # room for CEO briefing which can be long
+LLM_MAX_TOKENS  = 2048
 LLM_TEMPERATURE = 0.3
+
+
+# ── Agent tuning ─────────────────────────────────────────────────────────────
+# These control the autonomous research loop in ceo_agent.py.
+# Increase MIN_* values for more thorough (slower) analysis.
+# Decrease for faster (lighter) runs.
+MAX_STEPS         = int(os.getenv("MAX_STEPS",         "20"))  # max research loop steps
+K_CHUNKS          = int(os.getenv("K_CHUNKS",          "6"))   # chunks per search (Groq TPM guard)
+MIN_OPPORTUNITIES = int(os.getenv("MIN_OPPORTUNITIES", "3"))   # minimum before concluding
+MIN_RISKS         = int(os.getenv("MIN_RISKS",         "3"))   # minimum before concluding
+MIN_TRENDS        = int(os.getenv("MIN_TRENDS",        "2"))   # minimum before concluding
+QUALITY_THRESHOLD = float(os.getenv("QUALITY_THRESHOLD", "0.7"))  # SBERT grounding threshold
 
 
 # ── Logging ───────────────────────────────────────────────────────────────────
