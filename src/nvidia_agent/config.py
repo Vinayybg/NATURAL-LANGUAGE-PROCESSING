@@ -168,10 +168,10 @@ LLM_TEMPERATURE = 0.3
 # Decrease for faster (lighter) runs.
 MAX_STEPS         = int(os.getenv("MAX_STEPS",         "20"))  # max research loop steps
 K_CHUNKS          = int(os.getenv("K_CHUNKS",          "6"))   # chunks per search (Groq TPM guard)
-MIN_OPPORTUNITIES = int(os.getenv("MIN_OPPORTUNITIES", "3"))   # minimum before concluding
-MIN_RISKS         = int(os.getenv("MIN_RISKS",         "3"))   # minimum before concluding
-MIN_TRENDS        = int(os.getenv("MIN_TRENDS",        "2"))   # minimum before concluding
-QUALITY_THRESHOLD = float(os.getenv("QUALITY_THRESHOLD", "0.7"))  # SBERT grounding threshold
+MIN_OPPORTUNITIES = int(os.getenv("MIN_OPPORTUNITIES", "4"))   # minimum before concluding
+MIN_RISKS         = int(os.getenv("MIN_RISKS",         "4"))   # minimum before concluding
+MIN_TRENDS        = int(os.getenv("MIN_TRENDS",        "3"))   # minimum before concluding
+QUALITY_THRESHOLD = float(os.getenv("QUALITY_THRESHOLD", "0.5"))  # SBERT block threshold — below this forces needs_revision
 
 
 # ── Logging ───────────────────────────────────────────────────────────────────

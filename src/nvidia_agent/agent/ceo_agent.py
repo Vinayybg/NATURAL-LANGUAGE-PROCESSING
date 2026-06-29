@@ -705,7 +705,9 @@ def _validate_recommendations(recommendations: List[Dict], mem: AgentMemory) -> 
 
     # Stage 1: SBERT grounding (objective cosine similarity)
     # SBERT score is BINDING — below threshold forces needs_revision
-    SBERT_BLOCK_THRESHOLD = 0.5  # below this → overrides LLM approval
+    # Reads from config.py QUALITY_THRESHOLD (default 0.5)
+    # Override via .env: QUALITY_THRESHOLD=0.6
+    SBERT_BLOCK_THRESHOLD = QUALITY_THRESHOLD
     if _VERIFIER_AVAILABLE:
         logger.info("  [VALIDATE] SBERT grounding check...")
         ver = verify_recommendations(recommendations)
@@ -1024,7 +1026,22 @@ def _save_outputs(d: Dict, mem: Any) -> None:
         for i, q in enumerate(agent_log.get("queries_run", []), 1):
             txt.append(f"  {i}. {q}")
         txt.append("")
-        txt.append("STEP-BY-STEP REASONING LOG:")
+        txt.append("LLM ACTIVITY LOG — WHAT THE LLM DID AT EACH STEP:")
+        txt.append("-" * 60)
+        txt.append("This section shows every decision the LLM made autonomously:")
+        txt.append("  - Which tool it chose and why")
+        txt.append("  - What search query it generated itself")
+        txt.append("  - What it found after each search")
+        txt.append("-" * 60)
+        for step in agent_log.get("reasoning_log", []):
+            txt.append("")
+            txt.append(f"┌─ STEP {step.get('step','?')} ─────────────────────────────────────────")
+            txt.append(f"│  Tool chosen:  {step.get('tool','?').upper()}")
+            txt.append(f"│  LLM query:    {step.get('argument','(none)')}")
+            txt.append(f"│  LLM reasoning:{step.get('reasoning','')}")
+            txt.append(f"└────────────────────────────────────────────────────────")
+        txt.append("")
+        txt.append("STEP-BY-STEP FINDINGS LOG:")
         txt.append("-" * 60)
         for step in agent_log.get("reasoning_log", []):
             txt.append(f"Step {step.get('step','?'):>2} | Tool: {step.get('tool','?'):<12} | {step.get('argument','')[:60]}")
@@ -1095,7 +1112,20 @@ def _save_outputs(d: Dict, mem: Any) -> None:
         for i, q in enumerate(agent_log.get("queries_run", []), 1):
             md.append(f"{i}. `{q}`")
         md.append("")
-        md.append("### Step-by-Step Reasoning")
+        md.append("### LLM Activity Log — What the LLM Did")
+        md.append("")
+        md.append("> This section shows every autonomous decision the LLM made: "
+                  "which tool it chose, what query it generated, and why.")
+        md.append("")
+        for step in agent_log.get("reasoning_log", []):
+            md.append(f"#### Step {step.get('step','?')} — `{step.get('tool','?').upper()}`")
+            md.append("")
+            if step.get("argument"):
+                md.append(f"**LLM Generated Query:** `{step.get('argument','')}`")
+                md.append("")
+            md.append(f"**LLM Reasoning:** {step.get('reasoning','')}")
+            md.append("")
+        md.append("### Step-by-Step Summary Table")
         md.append("")
         md.append("| Step | Tool | Query | Reasoning |")
         md.append("|------|------|-------|-----------|")
