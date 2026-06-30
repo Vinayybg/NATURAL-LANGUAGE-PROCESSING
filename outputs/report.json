@@ -1,13 +1,31 @@
 {
   "opportunities": [
     {
-      "title": "AI Networking Dominance in Data Centers",
-      "description": "Nvidia dominates in AI networking, leading the data center Ethernet switch market, with revenue expected to reach $10 billion by 2026 as cloud giants race to build data centers.",
+      "title": "AI data center expansion in Indonesia",
+      "description": "Nvidia-backed Firmus will build a 360MW AI data center in Indonesia and expects $30 billion in offtake deals, indicating strong demand for AI infrastructure.",
       "impact_level": "High",
-      "expected_impact": "Increased market share and revenue growth from AI networking solutions in data centers.",
+      "expected_impact": "Increased market share in AI data center infrastructure and long-term revenue growth.",
       "evidence_doc_indices": [
-        1,
-        3
+        4
+      ],
+      "evidence": [
+        {
+          "source": "The Next Web",
+          "title": "Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals",
+          "excerpt": "Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals. F",
+          "url": "https://thenextweb.com/news/firmus-nvidia-indonesia-batam-data-center-30-billion/",
+          "sentiment": 0.4404
+        }
+      ],
+      "confidence_score": 1.0
+    },
+    {
+      "title": "AI chip dominance in data centers",
+      "description": "Nvidia leads the data center Ethernet switch market and is positioned to benefit from the growing demand for AI networking solutions.",
+      "impact_level": "High",
+      "expected_impact": "Consolidation of leadership in AI and data center technologies, driving revenue and market share.",
+      "evidence_doc_indices": [
+        1
       ],
       "evidence": [
         {
@@ -16,133 +34,151 @@
           "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. As cloud giants race to build data centers, Nvidia do",
           "url": "https://www.businessinsider.com/nvidia-leads-in-data-center-ethernet-switch-market-revenue-2026-6#article",
           "sentiment": 0.4215
-        },
-        {
-          "source": "Biztoc.com",
-          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
-          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. Nvidia CEO Jensen Huang Chris Jung/NurPhoto via Getty",
-          "url": "https://biztoc.com/x/e1c5b6972b2ddbdc",
-          "sentiment": 0.3818
         }
       ],
       "confidence_score": 1.0
     },
     {
-      "title": "AI Data Center Shortage Creates Demand",
-      "description": "A global AI data center shortage is worsening, creating opportunities for companies like Nebius and indirectly benefiting Nvidia's ecosystem through increased demand for AI infrastructure.",
+      "title": "Expansion into PC market with AI chips",
+      "description": "Nvidia is entering the PC market with a new AI chip, challenging Intel and AMD, and could redefine local AI processing.",
       "impact_level": "Medium",
-      "expected_impact": "Higher demand for AI-related hardware and services, including Nvidia's chips and networking solutions.",
+      "expected_impact": "Diversification of revenue streams and increased presence in the consumer PC market.",
       "evidence_doc_indices": [
-        2
+        2,
+        3
       ],
       "evidence": [
         {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994
+          "source": "Yahoo Entertainment",
+          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
+          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
+          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
+          "sentiment": 0.0
+        },
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
+          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
+          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
+          "sentiment": 0.4404
         }
       ],
       "confidence_score": 1.0
     },
     {
-      "title": "Energy-Efficient AI Cooling Solutions",
-      "description": "NVIDIA is advancing liquid cooling technologies to reduce the power consumption of AI hardware, as highlighted in their efforts to cool AI\u2019s biggest machines to 45\u00b0C, which is more energy-efficient and environmentally friendly.",
+      "title": "AI chip dominance in PC market",
+      "description": "Nvidia is entering the PC market with a new AI chip aimed at challenging Intel and AMD, potentially loosening their stranglehold in the arena.",
       "impact_level": "High",
-      "expected_impact": "Reduces operational costs and increases scalability of AI infrastructure",
+      "expected_impact": "Increased market share and revenue from AI-enabled PCs",
       "evidence_doc_indices": [
+        1,
         4
       ],
       "evidence": [
         {
-          "source": "NVIDIA Newsroom",
-          "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
-          "excerpt": "45 degrees Celsius \u2014 hotter than a hot tub, cooler for the planet \u2014 is one of the most important tools the industry has to close that gap. Learn more about liquid cooling, the NVIDIA DSX platform for AI factories and NVI",
-          "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-          "sentiment": 0.9774
-        }
-      ],
-      "confidence_score": 0.9
-    },
-    {
-      "title": "AI-Driven Renewable Energy Integration",
-      "description": "NVIDIA AI infrastructure is being used to optimize energy generation from renewable sources, such as wave energy, through digital twins and AI simulations, enabling more efficient and sustainable power solutions.",
-      "impact_level": "High",
-      "expected_impact": "Increased adoption of AI in renewable energy systems, expanding NVIDIA's footprint in green technology.",
-      "evidence_doc_indices": [
-        5
-      ],
-      "evidence": [
+          "source": "Yahoo Entertainment",
+          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
+          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
+          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
+          "sentiment": 0.0
+        },
         {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins | NVIDIA Blog Skip to content Eco Wave Power Tur",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591
+          "source": "Crypto Briefing",
+          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
+          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
+          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
+          "sentiment": 0.4404
         }
       ],
-      "confidence_score": 0.8
+      "confidence_score": 0.95
     },
     {
-      "title": "Telecom AI Agents for Network Optimization",
-      "description": "NVIDIA is bringing 24/7 AI agents to telecom operations, enabling safe simulation and validation of RAN scenarios, improving network efficiency and reducing operational costs.",
-      "impact_level": "Medium",
-      "expected_impact": "Enhanced telecom network performance and increased demand for NVIDIA's AI infrastructure in the telecom sector.",
+      "title": "Growing edge AI chip market",
+      "description": "The edge AI chips market is projected to surpass USD 291.8 billion by 2033, creating major opportunities across the AI semiconductor industry.",
+      "impact_level": "High",
+      "expected_impact": "Significant growth in demand for AI chips in edge computing applications",
       "evidence_doc_indices": [
         3
       ],
       "evidence": [
         {
-          "source": "NVIDIA Newsroom",
-          "title": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
-          "excerpt": "agents will be able to safely simulate and validate RAN \u201cwhat\u2011if\u201d scenarios, ranging from area\u2011optimization strategies to future radio conditions, traffic shifts and new AI air\u2011interface functions. Dive deeper into the t",
-          "url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
-          "sentiment": 0.9895
+          "source": "PRNewswire",
+          "title": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry",
+          "excerpt": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities",
+          "url": "https://www.prnewswire.com/news-releases/edge-ai-chips-market-set-to-surpass-usd-291-8-billion-by-2033--creating-major-opportunities-across-the-ai-semiconductor-industry-302803387.html",
+          "sentiment": 0.9632
         }
       ],
-      "confidence_score": 0.8
-    },
+      "confidence_score": 0.95
+    }
+  ],
+  "risks": [
     {
-      "title": "Wave Energy Integration with AI Factories",
-      "description": "Eco Wave Power is leveraging NVIDIA AI infrastructure and digital twins to convert wave energy into electricity, with potential to directly link AI factories to wave energy sources. This could provide a sustainable power solution for data centers.",
-      "impact_level": "High",
-      "expected_impact": "Enables sustainable energy solutions for AI infrastructure, reducing reliance on traditional power grids.",
+      "title": "Increased competition from Amazon",
+      "description": "Amazon is in talks to sell its AI chips to other data centers, representing a $50 billion opportunity that could directly challenge Nvidia's market position.",
+      "severity": "High",
+      "category": "competitive",
+      "mitigation": "Accelerate innovation and expand partnerships with cloud providers to maintain leadership in AI chip manufacturing.",
       "evidence_doc_indices": [
-        1,
-        2,
-        4
+        5
       ],
       "evidence": [
         {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins | NVIDIA Blog Skip to content Eco Wave Power Tur",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591
-        },
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "Suao Port in Taiwan, and Mumbai, India, with Bharat Petroleum. Wave power has already demonstrated its ability to handle consumer energy needs \u2014 and is now showing potential to support data centers. \u201cWe have a possibilit",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591
-        },
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "to breakwaters or sea walls to capture the power generated by waves breaking against the shoreline. The density of seawater is roughly 800x the density of air, allowing larger amounts of energy to be generated using much",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591
+          "source": "TechCrunch",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+          "excerpt": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch. AWS is in talks to sell its chips to other data cen",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "sentiment": 0.9217
         }
       ],
-      "confidence_score": 0.75
+      "confidence_score": 1.0
     },
     {
-      "title": "AI Chip Dominance in PC Market",
-      "description": "Nvidia enters the PC market with a new AI chip, challenging Intel and AMD, potentially redefining local AI processing and capturing a new segment of the market.",
-      "impact_level": "High",
-      "expected_impact": "Increased market share and revenue from AI-enabled PCs",
+      "title": "Amazon's AI chip competition",
+      "description": "Amazon is in talks to sell its AI chips to other data centers, representing a $50 billion opportunity for the company and directly challenging Nvidia's dominance in the AI chip market.",
+      "severity": "High",
+      "category": "competitive",
+      "mitigation": "Accelerate innovation in AI chip performance and efficiency, and expand partnerships with key data center providers to maintain market share.",
+      "evidence_doc_indices": [
+        5
+      ],
+      "evidence": [
+        {
+          "source": "TechCrunch",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+          "excerpt": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch. AWS is in talks to sell its chips to other data cen",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "sentiment": 0.9217
+        }
+      ],
+      "confidence_score": 0.95
+    },
+    {
+      "title": "Geopolitical supply chain risks",
+      "description": "Nvidia\u2019s banned AI chips have seen a surge in black market demand in China, highlighting geopolitical tensions and prompting China to boost domestic chip production, which could reduce reliance on foreign technology.",
+      "severity": "Medium",
+      "category": "geopolitical",
+      "mitigation": "Diversify manufacturing and supply chain operations to reduce exposure to geopolitical risks and strengthen relationships with international partners.",
+      "evidence_doc_indices": [
+        6
+      ],
+      "evidence": [
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market",
+          "excerpt": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market Nvidia\u2019s banned AI chips double in price on China\u2019s black market. The black market surge highlights geopolitical tensions, impacting global tech supply cha",
+          "url": "https://cryptobriefing.com/nvidia-chips-double-price-china-black-market/",
+          "sentiment": -0.7906
+        }
+      ],
+      "confidence_score": 0.95
+    },
+    {
+      "title": "Black market surge in banned chips",
+      "description": "Nvidia\u2019s banned AI chips have doubled in price on China\u2019s black market, highlighting geopolitical tensions and impacting global tech supply chains. This surge has prompted China to boost domestic chip production.",
+      "severity": "High",
+      "category": "geopolitical",
+      "mitigation": "Strengthening compliance with export controls and diversifying supply chain partnerships to reduce reliance on any single region.",
       "evidence_doc_indices": [
         1,
         2
@@ -150,300 +186,214 @@
       "evidence": [
         {
           "source": "Crypto Briefing",
-          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
-          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
-          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
-          "sentiment": 0.4404
+          "title": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market",
+          "excerpt": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market Nvidia\u2019s banned AI chips double in price on China\u2019s black market. The black market surge highlights geopolitical tensions, impacting global tech supply cha",
+          "url": "https://cryptobriefing.com/nvidia-chips-double-price-china-black-market/",
+          "sentiment": -0.7906
         },
         {
-          "source": "Yahoo Entertainment",
-          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
-          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
-          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
-          "sentiment": 0.0
+          "source": "Tom's Hardware",
+          "title": "China black market Nvidia prices rocket in wake of smuggling crackdown and customs freeze \u2014 five-year-old A100 servers triple in price, now fetching up to $82,000",
+          "excerpt": "2026 Buyers are repurposing gaming GPUs and bidding up older Ampere hardware. When you purchase through links on our site, we may earn an affiliate commission. Here\u2019s how it works. (Image credit: Nvidia) Copy link Facebo",
+          "url": "https://www.tomshardware.com/pc-components/gpu-drivers/five-year-old-nvidia-a100-servers-triple-in-price-in-china",
+          "sentiment": 0.9308
         }
       ],
-      "confidence_score": 1.0
+      "confidence_score": 0.95
+    },
+    {
+      "title": "Smuggling crackdown impacts chip availability",
+      "description": "A smuggling crackdown and customs freeze have caused five-year-old A100 servers to triple in price in China, with older Ampere hardware fetching up to $82,000. This disrupts supply chains and increases costs for data centers.",
+      "severity": "High",
+      "category": "geopolitical",
+      "mitigation": "Engaging in diplomatic efforts to ease trade restrictions and investing in localized manufacturing to reduce dependency on global logistics.",
+      "evidence_doc_indices": [
+        2
+      ],
+      "evidence": [
+        {
+          "source": "Tom's Hardware",
+          "title": "China black market Nvidia prices rocket in wake of smuggling crackdown and customs freeze \u2014 five-year-old A100 servers triple in price, now fetching up to $82,000",
+          "excerpt": "2026 Buyers are repurposing gaming GPUs and bidding up older Ampere hardware. When you purchase through links on our site, we may earn an affiliate commission. Here\u2019s how it works. (Image credit: Nvidia) Copy link Facebo",
+          "url": "https://www.tomshardware.com/pc-components/gpu-drivers/five-year-old-nvidia-a100-servers-triple-in-price-in-china",
+          "sentiment": 0.9308
+        }
+      ],
+      "confidence_score": 0.95
+    },
+    {
+      "title": "AI stigma in gaming",
+      "description": "Games that use generative AI receive 53% poorer first-month reviews, which could impact consumer perception and adoption of AI-enhanced products.",
+      "severity": "Medium",
+      "category": "competitive",
+      "mitigation": "Focus on quality assurance and marketing to counteract AI stigma",
+      "evidence_doc_indices": [
+        2
+      ],
+      "evidence": [
+        {
+          "source": "ExtremeTech",
+          "title": "Games That Use Generative AI Receive 53% Poorer First\u2011Month Reviews: Study",
+          "excerpt": "Game Oracle The authors argue that AI might have a neutral effect on low-budget beginners who already face poor sales, but might hurt potential hits from experienced teams by feeding an \"AI stigma\" and reducing player tr",
+          "url": "https://www.extremetech.com/gaming/games-that-use-generative-ai-receive-53-poorer-firstmonth-reviews-study",
+          "sentiment": 0.6946
+        }
+      ],
+      "confidence_score": 0.95
     }
   ],
-  "risks": [
+  "trends": [
     {
-      "title": "Shift in AI Bottleneck to Power",
-      "description": "The bottleneck in the AI boom has shifted from chips to power, indicating potential challenges in meeting the energy demands of AI infrastructure.",
-      "severity": "Medium",
-      "category": "operational",
-      "mitigation": "Invest in energy-efficient chip designs and collaborate with power solution providers to address energy consumption challenges.",
-      "evidence_doc_indices": [
-        6
-      ],
-      "evidence": [
-        {
-          "source": "PRNewswire",
-          "title": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power",
-          "excerpt": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power. FN Media Group Presents Oilprice.com Market Commentary NEW YORK, June 2",
-          "url": "https://www.prnewswire.com/news-releases/the-bottleneck-behind-the-ai-boom-has-quietly-shifted-from-chips-to-power-302807811.html",
-          "sentiment": 0.7774
-        }
-      ],
-      "confidence_score": 1.0
-    },
-    {
-      "title": "Power Consumption Bottleneck",
-      "description": "The AI arms race is increasingly about electricity, with power becoming a major bottleneck, as noted in the shift from chip limitations to power constraints in AI development.",
-      "severity": "High",
-      "category": "operational",
-      "mitigation": "Invest in energy-efficient hardware and cooling technologies to reduce power demands",
-      "evidence_doc_indices": [
-        5
-      ],
-      "evidence": [
-        {
-          "source": "Yahoo Entertainment",
-          "title": "The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity",
-          "excerpt": "The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity. The bottleneck has shifted from chips to power, and one under-the-radar stock just signed",
-          "url": "https://finance.yahoo.com/technology/ai/articles/ai-arms-race-isn-t-000000017.html",
-          "sentiment": 0.5256
-        }
-      ],
-      "confidence_score": 0.9
-    },
-    {
-      "title": "Regulatory Hurdles in AI Grid Integration",
-      "description": "FERC's large-load interconnection actions may introduce regulatory complexities that could delay or complicate the deployment of AI-driven grid solutions.",
-      "severity": "Medium",
-      "category": "regulatory",
-      "mitigation": "Proactive engagement with regulatory bodies and collaboration with industry stakeholders to shape favorable policies.",
+      "title": "Rise of AI-driven data centers",
+      "description": "Cloud giants are racing to build data centers, and Nvidia is leading in AI networking, indicating a growing trend toward AI-centric infrastructure.",
+      "time_horizon": "long-term",
+      "expected_impact": "High",
+      "relevance": "Nvidia is well-positioned to benefit from this trend due to its leadership in AI and data center technologies.",
       "evidence_doc_indices": [
         1
       ],
       "evidence": [
         {
-          "source": "NVIDIA Newsroom",
-          "title": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
-          "excerpt": "Decade-Defining Opportunity The framework is in place \u2014 but how it\u2019s implemented, refined and scaled will depend on the stakeholders who engage now. Across government and industry, those who engage today will define what",
-          "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
-          "sentiment": 0.9888
+          "source": "Business Insider",
+          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
+          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. As cloud giants race to build data centers, Nvidia do",
+          "url": "https://www.businessinsider.com/nvidia-leads-in-data-center-ethernet-switch-market-revenue-2026-6#article",
+          "sentiment": 0.4215
         }
       ],
-      "confidence_score": 0.8
+      "confidence_score": 1.0
     },
     {
-      "title": "Intense Competition from Intel and AMD",
-      "description": "Nvidia faces strong competition from established players like Intel and AMD in the PC market, which could hinder its market penetration and adoption of its AI chips.",
-      "severity": "High",
-      "category": "competitive",
-      "mitigation": "Differentiate through superior AI performance, partnerships with PC manufacturers, and aggressive marketing strategies",
+      "title": "AI chip diversification in PCs",
+      "description": "Nvidia's entry into the PC market with AI chips signals a growing trend of integrating AI capabilities into consumer hardware.",
+      "time_horizon": "mid-term",
+      "expected_impact": "Medium",
+      "relevance": "This trend could open new revenue streams and increase Nvidia's influence in the consumer electronics market.",
       "evidence_doc_indices": [
-        1,
-        2
+        2,
+        3
       ],
       "evidence": [
-        {
-          "source": "Crypto Briefing",
-          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
-          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
-          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
-          "sentiment": 0.4404
-        },
         {
           "source": "Yahoo Entertainment",
           "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
           "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
           "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
           "sentiment": 0.0
+        },
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
+          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
+          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
+          "sentiment": 0.4404
         }
       ],
       "confidence_score": 1.0
     },
     {
-      "title": "Geopolitical Challenges in China",
-      "description": "Nvidia's attempts to sell its Vera CPU to China face significant geopolitical hurdles, including trade restrictions and competition from local players like Huawei.",
-      "severity": "Medium",
-      "category": "geopolitical",
-      "mitigation": "Diversify market focus and strengthen relationships with other regions while navigating regulatory environments",
-      "evidence_doc_indices": [
-        4
-      ],
-      "evidence": [
-        {
-          "source": "TechRadar",
-          "title": "Nvidia desperately wants to sell its latest Vera CPU to China after its market share 'effectively fallen to zero' but can it beat AMD, Intel, and Huawei?",
-          "excerpt": "Nvidia desperately wants to sell its latest Vera CPU to China after its market share 'effectively fallen to zero' but can it beat AMD, Intel, and Huawei? Nvidia desperately wants to sell its latest Vera CPU to China afte",
-          "url": "https://www.techradar.com/pro/nvidia-desperately-wants-to-sell-its-latest-vera-cpu-to-china-after-its-market-share-effectively-fallen-to-zero-but-can-it-beat-amd-intel-and-huawei",
-          "sentiment": -0.8156
-        }
-      ],
-      "confidence_score": 1.0
-    }
-  ],
-  "trends": [
-    {
-      "title": "AI Infrastructure Expansion",
-      "description": "Artificial intelligence is creating a new kind of infrastructure race, with increased demand for data centers and AI-specific hardware.",
+      "title": "Rise of AI in edge computing",
+      "description": "The edge AI chips market is growing rapidly, driven by demand for localized AI processing and reduced latency in applications.",
       "time_horizon": "long-term",
       "expected_impact": "High",
-      "relevance": "NVIDIA is well-positioned to benefit from this trend through its leadership in AI chips and networking solutions.",
+      "relevance": "NVIDIA can leverage its AI chip expertise to capture a significant share of the growing edge computing market.",
       "evidence_doc_indices": [
-        2
+        3
       ],
       "evidence": [
         {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994
+          "source": "PRNewswire",
+          "title": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry",
+          "excerpt": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities",
+          "url": "https://www.prnewswire.com/news-releases/edge-ai-chips-market-set-to-surpass-usd-291-8-billion-by-2033--creating-major-opportunities-across-the-ai-semiconductor-industry-302803387.html",
+          "sentiment": 0.9632
         }
       ],
-      "confidence_score": 1.0
-    },
-    {
-      "title": "Expansion into PC Market",
-      "description": "Nvidia is entering the PC market with a new AI chip aimed at challenging Intel and AMD, signaling a broader push into consumer and enterprise computing.",
-      "time_horizon": "mid-term",
-      "expected_impact": "Medium",
-      "relevance": "This move could diversify NVIDIA's revenue streams beyond data centers and AI, reducing dependency on a single market segment.",
-      "evidence_doc_indices": [
-        5
-      ],
-      "evidence": [
-        {
-          "source": "Yahoo Entertainment",
-          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
-          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
-          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
-          "sentiment": 0.0
-        }
-      ],
-      "confidence_score": 1.0
-    },
-    {
-      "title": "AI Infrastructure Energy Efficiency",
-      "description": "There is a growing emphasis on energy-efficient AI infrastructure, with NVIDIA leading efforts in liquid cooling and energy-efficient AI factories to manage heat and power consumption effectively.",
-      "time_horizon": "mid-term",
-      "expected_impact": "High",
-      "relevance": "Enables NVIDIA to maintain leadership in AI hardware while addressing environmental and operational concerns",
-      "evidence_doc_indices": [
-        4
-      ],
-      "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
-          "excerpt": "45 degrees Celsius \u2014 hotter than a hot tub, cooler for the planet \u2014 is one of the most important tools the industry has to close that gap. Learn more about liquid cooling, the NVIDIA DSX platform for AI factories and NVI",
-          "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-          "sentiment": 0.9774
-        }
-      ],
-      "confidence_score": 0.9
-    },
-    {
-      "title": "Expansion of AI in Renewable Energy",
-      "description": "AI infrastructure is increasingly being used to optimize renewable energy systems, such as wave energy, through digital twins and AI simulations, reflecting a growing trend toward sustainable energy solutions.",
-      "time_horizon": "mid-term",
-      "expected_impact": "High",
-      "relevance": "This trend positions NVIDIA as a key player in the intersection of AI and renewable energy, opening up new revenue streams and market opportunities.",
-      "evidence_doc_indices": [
-        5
-      ],
-      "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins | NVIDIA Blog Skip to content Eco Wave Power Tur",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591
-        }
-      ],
-      "confidence_score": 0.8
-    },
-    {
-      "title": "AI Cooling Innovations in Data Centers",
-      "description": "NVIDIA is pioneering energy-efficient cooling solutions, such as liquid cooling at 45\u00b0C, to reduce the environmental impact of AI infrastructure while maintaining high performance.",
-      "time_horizon": "short-term",
-      "expected_impact": "Medium",
-      "relevance": "These innovations directly address energy efficiency challenges in AI infrastructure, enhancing NVIDIA's competitive edge in data center markets.",
-      "evidence_doc_indices": [
-        6
-      ],
-      "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
-          "excerpt": "45 degrees Celsius \u2014 hotter than a hot tub, cooler for the planet \u2014 is one of the most important tools the industry has to close that gap. Learn more about liquid cooling, the NVIDIA DSX platform for AI factories and NVI",
-          "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-          "sentiment": 0.9774
-        }
-      ],
-      "confidence_score": 0.8
-    },
-    {
-      "title": "AI-Driven Energy Management in Telecom",
-      "description": "NVIDIA is introducing 24/7 AI agents for telecom operations, enabling real-time network optimization and management through AI-driven automation. This is being showcased at DTW Ignite 2026 with partners.",
-      "time_horizon": "mid-term",
-      "expected_impact": "High",
-      "relevance": "Expands NVIDIA's footprint in telecom AI, enhancing network efficiency and opening new revenue streams.",
-      "evidence_doc_indices": [
-        6
-      ],
-      "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
-          "excerpt": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations | NVIDIA Blog Skip to content NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations At DTW Ign",
-          "url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
-          "sentiment": 0.9895
-        }
-      ],
-      "confidence_score": 0.75
-    },
-    {
-      "title": "AI-Driven PC Market Expansion",
-      "description": "Nvidia's entry into the PC market with AI chips signals a growing trend of AI integration in consumer hardware, driven by demand for local AI processing capabilities.",
-      "time_horizon": "mid-term",
-      "expected_impact": "High",
-      "relevance": "This trend positions NVIDIA to capture a new revenue stream and expand its influence beyond data centers and gaming.",
-      "evidence_doc_indices": [
-        1,
-        2
-      ],
-      "evidence": [
-        {
-          "source": "Crypto Briefing",
-          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
-          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
-          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
-          "sentiment": 0.4404
-        },
-        {
-          "source": "Yahoo Entertainment",
-          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
-          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
-          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
-          "sentiment": 0.0
-        }
-      ],
-      "confidence_score": 1.0
+      "confidence_score": 0.95
     }
   ],
   "recommendations": [
     {
-      "title": "Accelerate Deployment of AI Networking Solutions in Data Centers",
-      "rationale": "With the AI data center shortage worsening and demand for AI infrastructure rising, Nvidia can capitalize on its leadership in AI networking to secure long-term contracts with cloud providers. This aligns with the growing AI infrastructure expansion trend.",
+      "title": "Accelerate AI chip deployment in Indonesia's new data center",
+      "rationale": "Nvidia-backed Firmus is building a 360MW AI data center in Indonesia with $30 billion in offtake deals, signaling strong demand for AI infrastructure. This is a strategic opportunity to secure long-term contracts and expand Nvidia's footprint in emerging markets.",
       "priority": "High",
       "time_horizon": "0-6 months",
-      "expected_impact": "Increase revenue from AI networking solutions by 15-20% within 12 months",
+      "expected_impact": "Secure a significant share of the $30 billion offtake deals and establish a strategic presence in Southeast Asia's AI infrastructure market.",
       "risk_assessment": {
-        "financial": "Moderate risk due to potential delays in product deployment",
-        "operational": "Low risk, as Nvidia already has a strong foundation in AI networking",
-        "strategic": "High strategic value due to alignment with market demand and trend"
+        "financial": "Moderate risk due to potential delays in infrastructure development or regulatory hurdles.",
+        "operational": "High risk if local supply chain logistics are not well-managed.",
+        "strategic": "Low risk, as this aligns with the growing trend of AI-driven data centers and Nvidia's leadership in AI networking."
       },
       "linked_opportunities": [
         1,
         2
       ],
       "linked_risks": [
+        3
+      ],
+      "linked_trends": [
         1
+      ],
+      "evidence": [
+        {
+          "source": "The Next Web",
+          "title": "Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals",
+          "excerpt": "Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals Nvidia-backed Firmus will build a 360MW AI data centre in Indonesia and expects $30 billion in offtake deals. F",
+          "url": "https://thenextweb.com/news/firmus-nvidia-indonesia-batam-data-center-30-billion/",
+          "sentiment": 0.4404,
+          "from": "opportunity"
+        },
+        {
+          "source": "Business Insider",
+          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
+          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. As cloud giants race to build data centers, Nvidia do",
+          "url": "https://www.businessinsider.com/nvidia-leads-in-data-center-ethernet-switch-market-revenue-2026-6#article",
+          "sentiment": 0.4215,
+          "from": "opportunity"
+        },
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market",
+          "excerpt": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market Nvidia\u2019s banned AI chips double in price on China\u2019s black market. The black market surge highlights geopolitical tensions, impacting global tech supply cha",
+          "url": "https://cryptobriefing.com/nvidia-chips-double-price-china-black-market/",
+          "sentiment": -0.7906,
+          "from": "risk"
+        },
+        {
+          "source": "Business Insider",
+          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
+          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. As cloud giants race to build data centers, Nvidia do",
+          "url": "https://www.businessinsider.com/nvidia-leads-in-data-center-ethernet-switch-market-revenue-2026-6#article",
+          "sentiment": 0.4215,
+          "from": "trend"
+        }
+      ],
+      "recommendation": "Accelerate AI chip deployment in Indonesia's new data center",
+      "grounding_confidence": 0.85,
+      "validation": {
+        "approved": true,
+        "verdict": "approved",
+        "reason": "The recommendation is grounded in evidence of strong demand for AI infrastructure in Indonesia and the strategic value of securing long-term contracts. It is specific and actionable, with a clear focus on expanding Nvidia's footprint in emerging markets.",
+        "suggestion": ""
+      }
+    },
+    {
+      "title": "Strengthen partnerships with cloud providers to counter Amazon's AI chip expansion",
+      "rationale": "Amazon is in talks to sell its AI chips to other data centers, representing a $50 billion opportunity that could challenge Nvidia's market position. Proactive engagement with cloud providers can help solidify Nvidia's position in the AI chip market.",
+      "priority": "High",
+      "time_horizon": "6-18 months",
+      "expected_impact": "Enhance Nvidia's market share in data center AI chips by securing long-term partnerships with leading cloud providers.",
+      "risk_assessment": {
+        "financial": "Moderate risk due to potential investment in partnership incentives.",
+        "operational": "Low risk, as this involves strategic collaboration rather than direct operational changes.",
+        "strategic": "High risk if Amazon successfully captures a significant portion of the AI chip market."
+      },
+      "linked_opportunities": [
+        2
+      ],
+      "linked_risks": [
+        1,
+        2
       ],
       "linked_trends": [
         1
@@ -458,193 +408,66 @@
           "from": "opportunity"
         },
         {
-          "source": "Biztoc.com",
-          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
-          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. Nvidia CEO Jensen Huang Chris Jung/NurPhoto via Getty",
-          "url": "https://biztoc.com/x/e1c5b6972b2ddbdc",
-          "sentiment": 0.3818,
-          "from": "opportunity"
-        },
-        {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994,
-          "from": "opportunity"
-        },
-        {
-          "source": "PRNewswire",
-          "title": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power",
-          "excerpt": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power. FN Media Group Presents Oilprice.com Market Commentary NEW YORK, June 2",
-          "url": "https://www.prnewswire.com/news-releases/the-bottleneck-behind-the-ai-boom-has-quietly-shifted-from-chips-to-power-302807811.html",
-          "sentiment": 0.7774,
+          "source": "TechCrunch",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+          "excerpt": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch. AWS is in talks to sell its chips to other data cen",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "sentiment": 0.9217,
           "from": "risk"
         },
         {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994,
+          "source": "TechCrunch",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch",
+          "excerpt": "Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch Amazon hopes to challenge Nvidia more directly by selling its AI chips | TechCrunch. AWS is in talks to sell its chips to other data cen",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "sentiment": 0.9217,
+          "from": "risk"
+        },
+        {
+          "source": "Business Insider",
+          "title": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of",
+          "excerpt": "Nvidia quietly rose to the top of a $10 billion market you may have never heard of Nvidia quietly rose to the top of a $10 billion market you may have never heard of. As cloud giants race to build data centers, Nvidia do",
+          "url": "https://www.businessinsider.com/nvidia-leads-in-data-center-ethernet-switch-market-revenue-2026-6#article",
+          "sentiment": 0.4215,
           "from": "trend"
         }
       ],
-      "recommendation": "Accelerate Deployment of AI Networking Solutions in Data Centers",
-      "grounding_confidence": 0.611,
+      "recommendation": "Strengthen partnerships with cloud providers to counter Amazon's AI chip expansion",
+      "grounding_confidence": 0.789,
       "validation": {
         "approved": true,
         "verdict": "approved",
-        "reason": "The recommendation is grounded in the trend of rising demand for AI infrastructure and the opportunity to secure long-term contracts with cloud providers. It is specific and actionable, focusing on accelerating deployment of AI networking solutions.",
+        "reason": "The rationale is supported by evidence of Amazon's potential expansion and the $50 billion opportunity at stake. The recommendation is specific and actionable, with a clear priority to counter competition and solidify Nvidia's market position.",
         "suggestion": ""
       }
     },
     {
-      "title": "Scale Liquid Cooling Technology for AI Hardware",
-      "rationale": "As power consumption becomes a major bottleneck in AI infrastructure, Nvidia's energy-efficient liquid cooling technology can differentiate its offerings and meet the rising demand for sustainable AI solutions.",
-      "priority": "High",
+      "title": "Expand AI chip integration into consumer PCs and edge devices",
+      "rationale": "Nvidia's entry into the PC market with AI chips signals a growing trend of integrating AI capabilities into consumer hardware. Expanding this effort can help diversify revenue streams and challenge Intel and AMD.",
+      "priority": "Medium",
       "time_horizon": "6-18 months",
-      "expected_impact": "Reduce AI hardware power consumption by 25% and increase adoption in data centers",
+      "expected_impact": "Capture a growing share of the AI chip market in consumer PCs and edge devices, potentially increasing revenue by 10-15% from this segment.",
       "risk_assessment": {
-        "financial": "Moderate risk due to R&D and scaling costs",
-        "operational": "Moderate risk related to manufacturing and integration complexity",
-        "strategic": "High strategic value due to alignment with energy efficiency trends and risk mitigation"
+        "financial": "Moderate risk due to R&D and marketing investment required.",
+        "operational": "Moderate risk in scaling production and distribution for consumer markets.",
+        "strategic": "Low risk, as this aligns with the trend of AI chip diversification in PCs and edge computing."
       },
       "linked_opportunities": [
-        3
+        3,
+        4
       ],
-      "linked_risks": [
-        1,
-        2
-      ],
+      "linked_risks": [],
       "linked_trends": [
+        2,
         3
       ],
       "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
-          "excerpt": "45 degrees Celsius \u2014 hotter than a hot tub, cooler for the planet \u2014 is one of the most important tools the industry has to close that gap. Learn more about liquid cooling, the NVIDIA DSX platform for AI factories and NVI",
-          "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-          "sentiment": 0.9774,
-          "from": "opportunity"
-        },
-        {
-          "source": "PRNewswire",
-          "title": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power",
-          "excerpt": "The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power The Bottleneck Behind the AI Boom Has Quietly Shifted From Chips to Power. FN Media Group Presents Oilprice.com Market Commentary NEW YORK, June 2",
-          "url": "https://www.prnewswire.com/news-releases/the-bottleneck-behind-the-ai-boom-has-quietly-shifted-from-chips-to-power-302807811.html",
-          "sentiment": 0.7774,
-          "from": "risk"
-        },
         {
           "source": "Yahoo Entertainment",
-          "title": "The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity",
-          "excerpt": "The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity The AI Arms Race Isn\u2019t About Technology \u2013 It\u2019s About Electricity. The bottleneck has shifted from chips to power, and one under-the-radar stock just signed",
-          "url": "https://finance.yahoo.com/technology/ai/articles/ai-arms-race-isn-t-000000017.html",
-          "sentiment": 0.5256,
-          "from": "risk"
-        },
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
-          "excerpt": "45 degrees Celsius \u2014 hotter than a hot tub, cooler for the planet \u2014 is one of the most important tools the industry has to close that gap. Learn more about liquid cooling, the NVIDIA DSX platform for AI factories and NVI",
-          "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-          "sentiment": 0.9774,
-          "from": "trend"
-        }
-      ],
-      "recommendation": "Scale Liquid Cooling Technology for AI Hardware",
-      "grounding_confidence": 0.618,
-      "validation": {
-        "approved": true,
-        "verdict": "approved",
-        "reason": "The recommendation is supported by the trend of increasing focus on sustainable AI solutions and the opportunity to differentiate Nvidia's offerings through energy-efficient technology. It is specific and actionable, targeting liquid cooling technology scaling.",
-        "suggestion": ""
-      }
-    },
-    {
-      "title": "Expand AI-Driven Renewable Energy Solutions",
-      "rationale": "Nvidia's AI infrastructure is already being used to optimize renewable energy generation. Expanding this effort could open new revenue streams and align with global sustainability goals.",
-      "priority": "Medium",
-      "time_horizon": "18+ months",
-      "expected_impact": "Capture 5-10% market share in AI-driven renewable energy solutions within 3 years",
-      "risk_assessment": {
-        "financial": "High risk due to long-term investment and uncertain ROI",
-        "operational": "Moderate risk due to cross-sector collaboration challenges",
-        "strategic": "High strategic value due to alignment with long-term sustainability trends"
-      },
-      "linked_opportunities": [
-        4
-      ],
-      "linked_risks": [
-        3
-      ],
-      "linked_trends": [
-        1
-      ],
-      "evidence": [
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
-          "excerpt": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins | NVIDIA Blog Skip to content Eco Wave Power Tur",
-          "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
-          "sentiment": 0.9591,
-          "from": "opportunity"
-        },
-        {
-          "source": "NVIDIA Newsroom",
-          "title": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
-          "excerpt": "Decade-Defining Opportunity The framework is in place \u2014 but how it\u2019s implemented, refined and scaled will depend on the stakeholders who engage now. Across government and industry, those who engage today will define what",
-          "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
-          "sentiment": 0.9888,
-          "from": "risk"
-        },
-        {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994,
-          "from": "trend"
-        }
-      ],
-      "recommendation": "Expand AI-Driven Renewable Energy Solutions",
-      "grounding_confidence": 0.479,
-      "validation": {
-        "approved": false,
-        "verdict": "needs_revision",
-        "reason": "SBERT grounding score 0.48 below threshold 0.5 \u2014 insufficient evidence grounding.",
-        "suggestion": ""
-      }
-    },
-    {
-      "title": "Strengthen Market Position in PC Market with AI Chips",
-      "rationale": "With Intel and AMD posing strong competition, Nvidia must accelerate its entry into the PC market with AI chips to secure a foothold and drive adoption of its AI ecosystem.",
-      "priority": "Medium",
-      "time_horizon": "6-18 months",
-      "expected_impact": "Increase PC market share by 5-8% within 18 months",
-      "risk_assessment": {
-        "financial": "Moderate risk due to marketing and R&D investment",
-        "operational": "Low risk, as Nvidia has a strong track record in chip development",
-        "strategic": "High strategic value due to diversification and long-term growth"
-      },
-      "linked_opportunities": [
-        2
-      ],
-      "linked_risks": [
-        4
-      ],
-      "linked_trends": [
-        2
-      ],
-      "evidence": [
-        {
-          "source": "24/7 Wall St.",
-          "title": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens",
-          "excerpt": "Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens. Artificial intelligence is creating a new kind of infrastructure race. Whil",
-          "url": "https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/",
-          "sentiment": -0.5994,
+          "title": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers",
+          "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
+          "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
+          "sentiment": 0.0,
           "from": "opportunity"
         },
         {
@@ -653,7 +476,7 @@
           "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
           "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
           "sentiment": 0.4404,
-          "from": "risk"
+          "from": "opportunity"
         },
         {
           "source": "Yahoo Entertainment",
@@ -661,7 +484,15 @@
           "excerpt": "Nvidia Is Taking On Intel and AMD With AI Chip for Computers Nvidia Is Taking On Intel and AMD With AI Chip for Computers. (Bloomberg) -- Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stra",
           "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
           "sentiment": 0.0,
-          "from": "risk"
+          "from": "opportunity"
+        },
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD",
+          "excerpt": "Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD Nvidia enters the personal computer market with a new AI chip, challenging Intel and AMD. Nvidia's entry into the PC market with a ",
+          "url": "https://cryptobriefing.com/nvidia-rtx-spark-superchip-pc-market/",
+          "sentiment": 0.4404,
+          "from": "opportunity"
         },
         {
           "source": "Yahoo Entertainment",
@@ -670,79 +501,125 @@
           "url": "https://finance.yahoo.com/news/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd-042523139.html",
           "sentiment": 0.0,
           "from": "trend"
+        },
+        {
+          "source": "PRNewswire",
+          "title": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry",
+          "excerpt": "Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities Across the AI Semiconductor Industry Edge AI Chips Market Set to Surpass USD 291.8 Billion by 2033, Creating Major Opportunities",
+          "url": "https://www.prnewswire.com/news-releases/edge-ai-chips-market-set-to-surpass-usd-291-8-billion-by-2033--creating-major-opportunities-across-the-ai-semiconductor-industry-302803387.html",
+          "sentiment": 0.9632,
+          "from": "trend"
         }
       ],
-      "recommendation": "Strengthen Market Position in PC Market with AI Chips",
-      "grounding_confidence": 0.795,
+      "recommendation": "Expand AI chip integration into consumer PCs and edge devices",
+      "grounding_confidence": 0.741,
       "validation": {
         "approved": true,
         "verdict": "approved",
-        "reason": "The recommendation is justified by the risk of competition from Intel and AMD and the opportunity to strengthen Nvidia's position in the PC market. It is specific and actionable, focusing on AI chip adoption in the PC segment.",
+        "reason": "The recommendation is aligned with the trend of AI integration into consumer hardware and offers a clear strategy to diversify revenue streams. It is specific and actionable, with a justified medium priority based on current market dynamics.",
+        "suggestion": ""
+      }
+    },
+    {
+      "title": "Invest in geopolitical risk mitigation and supply chain diversification",
+      "rationale": "Nvidia's banned AI chips have seen a surge in black market demand in China, highlighting geopolitical tensions and prompting China to boost domestic chip production. This could reduce reliance on foreign technology and impact Nvidia's market position.",
+      "priority": "Medium",
+      "time_horizon": "18+ months",
+      "expected_impact": "Reduce exposure to geopolitical risks and ensure long-term supply chain stability, potentially preserving 10-20% of current market share in China.",
+      "risk_assessment": {
+        "financial": "High risk due to potential investment in diversification and compliance measures.",
+        "operational": "Moderate risk in restructuring supply chains and navigating regulatory environments.",
+        "strategic": "High risk if geopolitical tensions escalate and China's domestic chip production gains momentum."
+      },
+      "linked_opportunities": [],
+      "linked_risks": [
+        3,
+        4
+      ],
+      "linked_trends": [],
+      "evidence": [
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market",
+          "excerpt": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market Nvidia\u2019s banned AI chips double in price on China\u2019s black market. The black market surge highlights geopolitical tensions, impacting global tech supply cha",
+          "url": "https://cryptobriefing.com/nvidia-chips-double-price-china-black-market/",
+          "sentiment": -0.7906,
+          "from": "risk"
+        },
+        {
+          "source": "Crypto Briefing",
+          "title": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market",
+          "excerpt": "Nvidia\u2019s banned AI chips double in price on China\u2019s black market Nvidia\u2019s banned AI chips double in price on China\u2019s black market. The black market surge highlights geopolitical tensions, impacting global tech supply cha",
+          "url": "https://cryptobriefing.com/nvidia-chips-double-price-china-black-market/",
+          "sentiment": -0.7906,
+          "from": "risk"
+        },
+        {
+          "source": "Tom's Hardware",
+          "title": "China black market Nvidia prices rocket in wake of smuggling crackdown and customs freeze \u2014 five-year-old A100 servers triple in price, now fetching up to $82,000",
+          "excerpt": "2026 Buyers are repurposing gaming GPUs and bidding up older Ampere hardware. When you purchase through links on our site, we may earn an affiliate commission. Here\u2019s how it works. (Image credit: Nvidia) Copy link Facebo",
+          "url": "https://www.tomshardware.com/pc-components/gpu-drivers/five-year-old-nvidia-a100-servers-triple-in-price-in-china",
+          "sentiment": 0.9308,
+          "from": "risk"
+        }
+      ],
+      "recommendation": "Invest in geopolitical risk mitigation and supply chain diversification",
+      "grounding_confidence": 0.867,
+      "validation": {
+        "approved": true,
+        "verdict": "approved",
+        "reason": "The recommendation is supported by evidence of geopolitical risks and supply chain challenges, particularly in China. It is specific and actionable, with a justified medium priority to address potential threats to Nvidia's market position.",
         "suggestion": ""
       }
     }
   ],
   "ceo_briefing": {
-    "executive_summary": "NVIDIA is poised to capitalize on a rapidly expanding AI infrastructure market, driven by surging demand for data centers, energy-efficient cooling solutions, and AI-driven renewable energy systems. The company is leading in AI networking, with its Ethernet switches expected to generate $10 billion in revenue by 2026, as cloud providers accelerate data center construction. Simultaneously, NVIDIA is advancing liquid cooling technologies to address rising power consumption challenges, aligning with global trends toward sustainability. However, the company faces headwinds, including a shift in AI bottlenecks toward power, regulatory hurdles in AI grid integration, and fierce competition from Intel and AMD. These dynamics underscore the need for strategic focus on high-priority initiatives that align with both market demand and operational scalability.\n\nNVIDIA's expansion into the PC market with AI chips represents a strategic move to diversify revenue streams and challenge traditional semiconductor leaders. At the same time, the company is leveraging AI to optimize renewable energy systems, reflecting a broader commitment to sustainability. While these opportunities are promising, the growing emphasis on energy efficiency and the geopolitical challenges in China necessitate a balanced approach to innovation and risk mitigation. The validated recommendations highlight the urgency of accelerating AI networking and cooling technologies, while also refining AI-driven renewable energy strategies to ensure long-term competitiveness.",
-    "what_happened": "NVIDIA is experiencing strong growth in AI networking and data center infrastructure, with its Ethernet switches expected to reach $10 billion in revenue by 2026. A global AI data center shortage is intensifying demand for AI infrastructure, indirectly benefiting NVIDIA's ecosystem. Meanwhile, the company is advancing energy-efficient cooling solutions and using AI to optimize renewable energy systems, but faces challenges from power consumption bottlenecks and competition from Intel and AMD.",
-    "why_it_matters": "NVIDIA's leadership in AI networking and energy-efficient cooling positions it to dominate the next phase of data center expansion, a critical growth area. However, the shift in AI bottlenecks toward power and regulatory hurdles in AI grid integration pose significant risks to scalability and deployment timelines. Competing with Intel and AMD in the PC market adds complexity to NVIDIA's strategy, requiring focused innovation and differentiation to maintain market share.",
-    "what_to_do_next": "- Accelerate deployment of AI networking solutions in data centers to capture the $10 billion revenue opportunity by 2026.\n- Scale liquid cooling technology for AI hardware to address power consumption challenges and enhance energy efficiency.\n- Refine AI-driven renewable energy solutions to ensure alignment with market needs and regulatory frameworks, leveraging NVIDIA's digital twin and simulation capabilities.\n- Strengthen market position in the PC market by differentiating NVIDIA's AI chips through performance, energy efficiency, and ecosystem integration."
+    "executive_summary": "NVIDIA is experiencing a pivotal moment in its growth trajectory, driven by significant opportunities in AI infrastructure, data center expansion, and the PC and edge computing markets. The company's strategic positioning in AI data centers, particularly in Indonesia, underscores strong demand for its AI chips and networking solutions. Additionally, NVIDIA's expansion into the PC market with AI chips presents a compelling challenge to Intel and AMD, while the growing edge AI chip market offers long-term scalability. However, the company faces notable risks, including intensified competition from Amazon and geopolitical supply chain disruptions, particularly in China. These dynamics highlight the need for a proactive and agile strategy to secure NVIDIA's leadership in the AI semiconductor space.",
+    "what_happened": "NVIDIA-backed Firmus is constructing a 360MW AI data center in Indonesia with $30 billion in offtake deals, while Amazon is expanding its AI chip sales to data centers, representing a $50 billion opportunity. Meanwhile, geopolitical tensions have driven a surge in black market demand for NVIDIA's banned chips in China, and a smuggling crackdown has caused older hardware to triple in price.",
+    "why_it_matters": "NVIDIA's leadership in AI data centers and its expansion into the PC and edge markets position it for sustained growth, but the rise of Amazon as a competitor and geopolitical supply chain risks could significantly impact its market share and profitability. Securing partnerships and diversifying supply chains are critical to maintaining dominance in the AI semiconductor industry.",
+    "what_to_do_next": "- Accelerate AI chip deployment in Indonesia's new data center to capitalize on $30 billion in offtake deals and solidify market leadership.\n- Strengthen partnerships with cloud providers to counter Amazon's AI chip expansion and secure long-term contracts.\n- Expand AI chip integration into consumer PCs and edge devices to diversify revenue streams and challenge Intel and AMD.\n- Invest in geopolitical risk mitigation and supply chain diversification to reduce exposure to black market demand and smuggling disruptions in China."
   },
   "agent_log": {
     "goal": "Build a comprehensive strategic intelligence report for NVIDIA",
-    "total_steps": 6,
+    "total_steps": 4,
     "queries_run": [
-      "NVIDIA market opportunities in AI and data center growth",
-      "NVIDIA risks related to power consumption in AI hardware",
-      "NVIDIA opportunities in AI infrastructure expansion and energy efficiency",
-      "NVIDIA risks related to regulatory hurdles in AI grid integration",
-      "NVIDIA opportunities in AI-driven renewable energy integration and telecom AI agents",
-      "NVIDIA risks related to expansion into the PC market"
+      "market opportunities for NVIDIA in AI and data center technologies",
+      "risks for NVIDIA from increased competition in AI chips",
+      "geopolitical supply chain risks for NVIDIA",
+      "Expansion into PC market with AI chips"
     ],
     "reasoning_log": [
       {
         "step": 1,
         "tool": "search",
-        "argument": "NVIDIA market opportunities in AI and data center growth",
-        "reasoning": "To identify opportunities related to NVIDIA's growth in AI and data centers, which are critical areas for the company."
+        "argument": "market opportunities for NVIDIA in AI and data center technologies",
+        "reasoning": "To identify key opportunities in AI and data center technologies for NVIDIA."
       },
       {
         "step": 2,
         "tool": "search",
-        "argument": "NVIDIA risks related to power consumption in AI hardware",
-        "reasoning": "The current risk list is low, so we need to search for additional risks specifically related to power consumption in AI hardware."
+        "argument": "risks for NVIDIA from increased competition in AI chips",
+        "reasoning": "The current risk count is low, so searching for additional risks related to competition is necessary to meet the requirements for concluding the research."
       },
       {
         "step": 3,
         "tool": "search",
-        "argument": "NVIDIA opportunities in AI infrastructure expansion and energy efficiency",
-        "reasoning": "To identify additional opportunities and trends related to AI infrastructure expansion and energy efficiency, which are critical for completing the strategic intelligence report."
+        "argument": "geopolitical supply chain risks for NVIDIA",
+        "reasoning": "To gather more information on the geopolitical supply chain risks, which is already listed but needs deeper analysis."
       },
       {
         "step": 4,
         "tool": "search",
-        "argument": "NVIDIA risks related to regulatory hurdles in AI grid integration",
-        "reasoning": "The current state indicates a gap in understanding the specific regulatory hurdles NVIDIA may face in AI grid integration, which needs to be addressed to fully assess risks."
-      },
-      {
-        "step": 5,
-        "tool": "search",
-        "argument": "NVIDIA opportunities in AI-driven renewable energy integration and telecom AI agents",
-        "reasoning": "To address gaps in opportunities and further explore trends related to AI in renewable energy and telecom network optimization."
-      },
-      {
-        "step": 6,
-        "tool": "search",
-        "argument": "NVIDIA risks related to expansion into the PC market",
-        "reasoning": "The current risk list is incomplete, and there is no information on risks related to NVIDIA's expansion into the PC market."
+        "argument": "Expansion into PC market with AI chips",
+        "reasoning": "To gather more information on NVIDIA's opportunities in the PC market with AI chips, which is currently under-explored."
       }
     ],
     "final_counts": {
-      "opportunities": 7,
-      "risks": 5,
-      "trends": 7,
+      "opportunities": 5,
+      "risks": 6,
+      "trends": 3,
       "recommendations": 4,
-      "recommendations_approved": 3
+      "recommendations_approved": 4
     }
   }
 }

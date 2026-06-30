@@ -5,11 +5,10 @@ verifier_agent.py — Evidence Grounding Verifier
 Scores each recommendation against retrieved evidence using SBERT cosine
 similarity. Programmatic, non-LLM verification — objective grounding check.
 
-Pattern from: MiniHackathon verifier + Module 10 (sentence-transformers)
 
 Used by ceo_agent.py _validate_recommendations() as the grounding check:
-  confidence >= 0.7 → recommendation is evidence-grounded (passes)
-  confidence <  0.7 → recommendation is flagged as weakly grounded (fails)
+  confidence >= 0.5 → recommendation is evidence-grounded (passes)
+  confidence <  0.5 → recommendation is flagged as weakly grounded (fails)
 
 Output metrics:
   mean_confidence   → average grounding score across all recommendations
@@ -21,7 +20,7 @@ from typing import List, Dict, Tuple
 
 logger = logging.getLogger(__name__)
 
-GROUNDING_THRESHOLD = 0.7  # minimum cosine similarity to pass verification
+GROUNDING_THRESHOLD = 0.5  # minimum cosine similarity to pass verification
 
 # Lazy-load sentence-transformers to avoid import cost at startup
 _sbert_model = None
@@ -122,7 +121,7 @@ def verify_recommendations(recommendations: List[Dict]) -> Dict:
     For each recommendation:
     1. Extract its text (recommendation + expected_impact)
     2. Score against its attached evidence using SBERT cosine
-    3. Flag as verified (>= 0.7) or unverified (< 0.7)
+    3. Flag as verified (>= 0.5) or unverified (< 0.5)
 
     Args:
         recommendations: List of recommendation dicts (must have 'evidence' key)

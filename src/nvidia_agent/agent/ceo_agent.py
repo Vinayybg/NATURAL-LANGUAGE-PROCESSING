@@ -684,7 +684,6 @@ def _generate_recommendations(mem: AgentMemory) -> List[Dict]:
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # PHASE 3 — VALIDATE RECOMMENDATIONS
-# Professor's exact requirement: validate before presenting to CEO
 # ═══════════════════════════════════════════════════════════════════════════════
 
 SYSTEM_VALIDATE = """You are a critical strategy reviewer.
@@ -894,7 +893,6 @@ def run_intelligence_engine(company: str = "NVIDIA") -> Dict:
         else:
             _tool_search(argument or f"{company} strategic analysis", mem)
 
-        # ── IMMEDIATE CONCLUDE CHECK ──────────────────────────────────────────
         # As soon as thresholds are met after ANY tool call → conclude immediately.
         # This is the key fix: don't wait for the LLM to decide — act now.
         if mem.has_enough():

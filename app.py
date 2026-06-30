@@ -508,10 +508,19 @@ def _build_prompt(question, context, history):
         "Be direct, specific, and actionable. Cite sources as [1],[2],[3]."
     )
 
+CHAT_RELEVANCE_THRESHOLD = 0.15  # RRF-based hybrid score; below this, treat as off-topic
+
 def get_chat_response(question, history):
     docs = hybrid_search(question, k=8)
     if not docs:
         return "No intelligence data available yet. Run Steps 1 and 2 in the sidebar first.", []
+    if all(d.get("score", 0) < CHAT_RELEVANCE_THRESHOLD for d in docs):
+        return (
+            "That's outside the scope of this advisor — I only have intelligence data on "
+            f"{config.COMPANY_NAME} and its market. Ask me about NVIDIA's opportunities, risks, "
+            "competitors, sentiment, or strategy instead.",
+            [],
+        )
     parts = [
         f"[{i}] {d['source']} — {d['title']}\n"
         f"Sentiment: {_sent_label(d.get('sentiment', 0))} ({d.get('sentiment', 0):.2f})\n"
