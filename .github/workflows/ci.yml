@@ -30,7 +30,7 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest tests/ -v --tb=short
+        run: pytest src/nvidia_agent/tests/ -v --tb=short
 
       - name: Syntax check all Python files
         run: |
